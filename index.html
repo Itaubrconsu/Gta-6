@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alien Cloud — GTA VI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="hero" id="home">
+    <header class="topbar">
+      <div class="brand-mark" aria-label="Alien Cloud">◈</div>
+      <nav><a class="live"><span></span> Ao vivo · <b>1.000 online (simulado)</b></a><button class="outline" id="plansTop">Ver planos</button><button class="iconbtn" aria-label="Perfil">♙</button><button class="iconbtn" aria-label="Menu">☰</button></nav>
+    </header>
+    <div class="hero-content">
+      <div class="gta-mark"><span>grand<br>theft<br><b>auto</b></span><i>VI</i></div>
+      <p class="subtitle">GRAND THEFT AUTO VI · PLAYSTATION 5</p>
+      <h1>Bem-vindo a Leonida</h1>
+      <button class="cta" id="viewPlans">Ver planos e jogar</button>
+      <div class="slider-controls"><span class="pause">Ⅱ</span><span class="track"><i></i></span><b>•</b><b>•</b></div>
+    </div>
+    <div class="social">◎</div>
+    <div class="demo-tag">DEMO / PROTÓTIPO</div>
+  </main>
+
+  <section class="plans-sheet hidden" id="plans">
+    <div class="sheet-head"><div class="mini-brand">◈ <span>ALIEN CLOUD</span> <small>BETA</small></div><button class="close" id="closePlans">×</button></div>
+    <h2>Comprar Horas</h2><p class="intro">Escolha seu pacote para jogar Grand Theft Auto VI: Ultimate Edition.</p>
+    <div class="plan-list">
+      <button class="plan" data-plan="9.99"><span>1h de jogo</span><strong>R$ 9,99</strong></button>
+      <button class="plan" data-plan="15.00"><span>2h de jogo</span><strong>R$ 15,00</strong></button>
+      <button class="plan" data-plan="59.99"><span>Pacote especial</span><strong>R$ 59,99</strong></button>
+    </div>
+    <p class="smallnote">Sem assinatura · Horas não expiram</p>
+    <button class="account-btn" id="continue">Entrar ou criar conta</button>
+    <p class="demo-note">Demonstração: nenhum pagamento ou compra real é processado.</p>
+  </section>
+
+  <section class="checkout hidden" id="checkout">
+    <div class="checkout-head"><button id="backPlans">‹ Voltar</button><span>ALIEN CLOUD <small>DEMO</small></span></div>
+    <h2>Quase lá! Pedido de demonstração</h2>
+    <p class="checkout-intro">Finalize o fluxo de teste para ver como a tela de pagamento ficaria.</p>
+    <div class="payment-card">
+      <h3>Quase lá! (simulação)</h3><p class="lead">Pagamento via Pix de demonstração</p>
+      <div class="amount">Valor: <strong id="amount">R$ 9,99</strong> <span>|</span> Expiração: 60 minutos</div>
+      <hr><h3>Pix Copia e Cola — código de teste</h3>
+      <p class="instructions">Este código é apenas ilustrativo e não deve ser usado para pagar.</p>
+      <textarea id="pixCode" readonly></textarea><button class="copy-btn" id="copyPix">▢ Copiar código de teste</button><p id="copyStatus"></p>
+      <hr><p class="qr-label">QR de pagamento não disponível nesta demonstração</p><div class="qr-placeholder">PIX<br>DEMO</div>
+    </div>
+  </section>
+  <aside class="toast" id="toast"></aside>
+  <script src="script.js"></script>
+</body>
+</html>
